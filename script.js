@@ -78,8 +78,9 @@ var handleInput = new Vue({
         } else {
           return false;
         }
-      })
-      if (existing.lenght) {
+      });
+      console.log(this.cart);
+      if (existing.length) {
         this.cart[whichProduct].qty++
       } else {
         this.cart.push({product: product, qty: 1})
